@@ -1,0 +1,28 @@
+!DOCTYPE html>
+<html>
+<body>
+
+<h1>JS Arrays</h1>
+<h2>Filter Method</h2>
+
+<p>Click "Test"</p>
+
+<p><input type="number" id="ageToCheck" value="60"></p>
+<button onclick="myFunction()">Test</button>
+
+<p id="Nick"></p>
+
+<script>
+const ages = [52, 43, 18, 90];
+
+function checkAge(age) {
+  return age > document.getElementById("ageToCheck").value;
+}
+
+function myFunction() {
+  document.getElementById("Nick").innerHTML = ages.filter(checkAge);
+}
+</script>
+
+</body>
+</html>
